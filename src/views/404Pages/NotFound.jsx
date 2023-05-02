@@ -1,5 +1,6 @@
 import { Box, Button, Typography } from '@mui/material'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function NotFound() {
     return (
@@ -13,7 +14,7 @@ export default function NotFound() {
             <Typography variant="h5">
                 Looks like you ended up here by accident?
             </Typography>
-            <Button variant="contained" sx={{mt:2}}>Go To home page</Button>
+            <Button component={Link} to="/home" variant="contained" sx={{mt:2}}>Go To home page</Button>
         </Box>
     )
 }
