@@ -9,6 +9,10 @@ import Register from './views/auth/Register';
 import NotFound from './views/404Pages/NotFound';
 import Home from './views/home/home';
 import NavBarLayout from './layouts/NavBarLayout';
+import AboutUs from './views/about-us/AboutUs';
+import Contact from './views/contact/Contact';
+import Service from './views/service/Service';
+import Pricing from './views/pricing/Pricing';
 
 
 function App() {
@@ -55,6 +59,10 @@ function App() {
       <Routes>
         <Route element={<NavBarLayout />}>
           <Route exact path="/home" element={<Home />} />
+          <Route exact path="/about-us" element={<AboutUs />} />
+          <Route exact path="/contact-us" element={<Contact />} />
+          <Route exact path="/service" element={<Service />} />
+          <Route exact path="/pricing" element={<Pricing />} />
         </Route>
         <Route exact path="*" element={<NotFound />} />
         <Route exact path="/" element={<Login />} />

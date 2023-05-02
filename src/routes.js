@@ -22,7 +22,7 @@ var routes = [
         component: Contact,
     },
     {
-        path: "/Servcie",
+        path: "/service",
         name: "Service",
         component: Service,
     },
@@ -30,11 +30,6 @@ var routes = [
         path: "/pricing",
         name: "Pricing",
         component: Pricing,
-    },
-    {
-        path: "/",
-        name: "login",
-        component: Login,
     },
 ];
 export default routes;

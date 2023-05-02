@@ -28,7 +28,7 @@ export default function NavBar(props) {
     const drawer = (
         <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
             <Typography variant="h6" sx={{ my: 2 }}>
-                MUI
+                Delivry-Free
             </Typography>
             <Divider />
             <List>
@@ -39,6 +39,12 @@ export default function NavBar(props) {
                         </ListItemButton>
                     </ListItem>
                 ))}
+                <hr/>
+                <ListItem disablePadding>
+                        <ListItemButton component={Link} to="/" >
+                            <ListItemText primary="Login" />
+                        </ListItemButton>
+                    </ListItem>
             </List>
         </Box>
     );
@@ -71,6 +77,10 @@ export default function NavBar(props) {
                                 {item.name}
                             </Button>
                         ))}
+                        |
+                        <Button component={Link} to="/" sx={{ color: '#fff' }}>
+                            LOGIN
+                        </Button>
                     </Box>
                 </Toolbar>
             </AppBar>
