@@ -1,0 +1,35 @@
+/* Login  */
+.logo-content {
+    text-align: center;
+}
+.logo-content>img {
+    width: 100%;
+    margin: auto;
+    height: auto;
+}
+.col-form {
+    background: #fff;
+    padding: 30px;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 0px 2px 18px -8px black;
+}
+.center-vh {
+    height: 100vh;
+}
+.center-vh>.c-vh-content {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.main-btn {
+    background: #2c3590;
+    border-color: #2c3590;
+}
+.main-btn:disabled {
+    background: #2c3590;
+    border-color: #2c3590;
+}
